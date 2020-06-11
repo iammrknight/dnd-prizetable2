@@ -1,24 +1,23 @@
-<div class="container" style="margin-top:1rem">
-  <h1>
-    Select a Gift &nbsp;
-    <small><small class="text-muted">Click on an item to see details</small></small>
-  </h1>
+<div class="container-fluid" style="margin-top:1rem;">
+  <div style="text-align:center;margin-bottom:1rem;">
+    <h1>Select a Gift</h1>
+    <h4 class="text-muted">Click on an item to see details</h4>
+  </div>
 
-  <div class="container-fluid">
+  <div class="container" style="margin-bottom: 2rem;">
     <div class="row">
-      <div class="col-sm-8">
-
-        <div class="card" style="width: 256px;">
-          <img src="assets/img/crossbow.png" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">A Fucking Automatic Crossbow</h5>
-            <p class="card-text">Yeah, it's a war crime.</p>
+      <div *ngFor="let item of items" [ngClass]="getCardStyle(item)" (click)="toggleFocus(item)">
+        <img src="{{ item.img }}" class="card-img-top" style="max-width:256px;">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+          <p class="card-text"><em>{{ item.lore }}</em></p>
+          <div *ngIf="item.focus">
+            <p *ngFor="let line of item.description" style="margin-bottom: 0.5rem;">{{ line }}</p>
+            <p *ngFor="let link of item.links" style="margin-bottom: 0.5rem;">
+              <a href="{{ link.url }}" target="_blank">{{ link.text }}</a>
+            </p>
           </div>
         </div>
-
-      </div>
-      <div class="col-sm-4">
-        
       </div>
     </div>
   </div>
