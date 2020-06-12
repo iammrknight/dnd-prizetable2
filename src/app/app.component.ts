@@ -32,6 +32,23 @@ export class AppComponent {
       ]
     },
     {
+      title: 'Forgemaster Gauntlet',
+      lore: 'For when handling with care isn\'t an option.',
+      img: 'assets/img/gauntlet.png',
+      focus: false,
+      description: [
+        'While wearing this gauntlet you have +2 AC and resistance to fire damage',
+        'The first time an enemy strikes you in combat you can cast Hellish Rebuke as a reaction',
+        'While wearing this gauntlet you have disadvantage on Slight of Hand checks that require the gauntleted hand'
+      ],
+      links: [
+        {
+          text: 'Hellish Rebuke',
+          url: 'https://www.dndbeyond.com/spells/hellish-rebuke'
+        }
+      ]
+    },
+    {
       title: 'Onyx Lute',
       lore: 'Custom-cursed by the witches of Deathmyst Peninsula.',
       img: 'assets/img/onyx_lute.png',
@@ -77,7 +94,7 @@ export class AppComponent {
     {
       title: 'Swamphunter Bow',
       lore: 'Repossessed from a witch hunter in Deathmyst Peninsula.',
-      img: 'assets/img/dark_bow.png',
+      img: 'assets/img/hunter_bow.png',
       focus: false,
       description: [
         'A +2 Magical Longbow',
