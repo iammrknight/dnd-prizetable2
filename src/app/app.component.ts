@@ -8,6 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   items = [
     {
+      title: 'Augmented Torso Frame',
+      lore: 'Protects the most important parts, with some unexpected magical perks.',
+      img: 'assets/img/power_leather.png',
+      focus: false,
+      description: [
+        '+2 Leather Armor',
+        'AC 13 + Dex Modifier',
+        'A supplemental armor for dealing with the physical demands of steam engineering by strengthing the upper body.',
+        'The wearer has resistance to slashing damage and proficiency with Strength checks.'
+      ]
+    },
+    {
       title: 'Full Auto Crossbow',
       lore: 'The steam-smiths were trying to make a nail gun, instead they made a war crime.',
       img: 'assets/img/crossbow.png',
@@ -17,6 +29,16 @@ export class AppComponent {
         'Tags: Heavy, Ranged, 2-Handed',
         'Grants the "Crossbow Expert" feat while equipped.',
         'You can shoot 2 bolts in a single action, each doing 1d6+2 piercing damage. You can target one or 2 targets, using the same attack and damage roll for each bolt.'
+      ]
+    },
+    {
+      title: 'Steamsmithing Goggles',
+      lore: 'An essential piece of safety gear for delicate crafting work, only some of the attachments are cosmetic.',
+      img: 'assets/img/steampunk_goggles.png',
+      focus: false,
+      description: [
+        'Adds +2 to Wisdom',
+        'The wearer has resistance to Lightning damage, and advantage on saves against being Stunned, Paralyzed, and Blinded.'
       ]
     },
     {
@@ -49,6 +71,22 @@ export class AppComponent {
       ]
     },
     {
+      title: 'Twitter Influencer Cloak',
+      lore: 'Created for the Druids operating the Twitter network.',
+      img: 'assets/img/animal_cloak.png',
+      focus: false,
+      description: [
+        'Adds +2 to Charisma',
+        'While wearing this cloak you can Speak with Animals, have resistance to Thunder damage, and advantage on saving throws against being Deafened.'
+      ],
+      links: [
+        {
+          text: 'Speak with Animals',
+          url: 'https://www.dndbeyond.com/spells/speak-with-animals'
+        }
+      ]
+    },
+    {
       title: 'Onyx Lute',
       lore: 'Custom-cursed by the witches of Deathmyst Peninsula.',
       img: 'assets/img/onyx_lute.png',
@@ -75,6 +113,18 @@ export class AppComponent {
         'You have resistance to frost damage while you hold this staff',
         'The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: cone of cold (5 charges), fog cloud (1 charge), ice storm (4 charges), or wall of ice (4 charges).',
         'The staff regains 1d6 + 4 expended charges daily at dawn.'
+      ]
+    },
+    {
+      title: 'Evil Resistant Armor',
+      lore: 'Top notch armor for combatting evil creatures.',
+      img: 'assets/img/dark_armor.png',
+      focus: false,
+      description: [
+        '+2 Studded Leather Armor',
+        'AC 14 + Dex Modifier',
+        'Blessed leather for combatting the everyday hazards of witch hunting and vampire slaying.',
+        'The wearer is resistant to necrotic damage, has advantage on Wisdom saving throws caused by evil creatures, and is immune to being frightened by evil creatures.'
       ]
     },
     {
